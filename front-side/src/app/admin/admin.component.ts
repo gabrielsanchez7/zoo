@@ -12,7 +12,7 @@ import { General } from '../services/general';
 export class AdminComponent implements OnInit {
 	public url: string;
 	public resources: string;
-	public identity: Array<any>;
+	public identity;
 	public token: string;
 	public dbImages: string;
 	public letterIcon: string;

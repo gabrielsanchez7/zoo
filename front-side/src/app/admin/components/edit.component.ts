@@ -14,6 +14,7 @@ export class EditDataComponent implements OnInit {
 
 	public title: string;
 	public animal: Animal;
+	public status: string;
 
 	constructor(
 		private _animalService: AnimalService,
@@ -42,5 +43,11 @@ export class EditDataComponent implements OnInit {
 			);
 		});
 	}
+
+	saveAnimal(addForm){
+
+	}
+
+
 
 }
