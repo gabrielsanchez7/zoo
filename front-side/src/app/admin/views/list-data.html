@@ -10,13 +10,13 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr *ngFor="let data of data; let i = index;">
+		<tr *ngFor="let animal of animals; let i = index;">
 			<td>{{i+1}}</td>
-			<td>Oso panda</td>
+			<td>{{animal.name}}</td>
 			<td>2012</td>
 			<td class="table-buttons">
 				<button><i class="fa fa-eye"></i>Ver</button>
-				<button><i class="fa fa-pencil"></i>Editar</button>
+				<button><a [routerLink]="['/admin/edit-data', animal._id]"><i class="fa fa-pencil"></i>Editar</a></button>
 				<button><i class="fa fa-trash"></i>Borrar</button>
 			</td>
 		</tr>

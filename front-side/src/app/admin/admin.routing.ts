@@ -17,8 +17,13 @@ const adminRoutes: Routes = [
 		children: [
 			{ path: 'list-data', component: ListDataComponent },
 			{ path: 'add-data', component: AddDataComponent },
-			{ path: 'select-animal', component: SelectAnimalComponent },
-			{ path: 'edit-data/:id', component: EditDataComponent }
+			{
+				path: 'edit-data',
+				children: [
+					{ path: '', component: SelectAnimalComponent },
+					{ path: ':id', component: EditDataComponent }
+				]
+			}
 		]
 	}
 ];

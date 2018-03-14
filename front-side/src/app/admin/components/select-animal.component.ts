@@ -27,7 +27,6 @@ export class SelectAnimalComponent {
 		this._animalService.getAnimals().subscribe(
 			response => {
 				this.animal = response.animals;
-				console.log(this.animal)
 			},
 			error => console.log(<any>error)
 		);
